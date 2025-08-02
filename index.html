@@ -1,62 +1,128 @@
 
-<!DOCTYPE html>
-<html lang="es">
+
+<!DOCTYPE html><html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Servicio Técnico Castelar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Service Castelar</title>
   <style>
     body {
       margin: 0;
-      background-color: #0d1117;
-      color: #d4af37;
       font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #0e1b2e;
+      color: #f9c55c;
+      padding: 40px 20px;
       text-align: center;
     }
-
-    header {
-      background-image: url("banner.jpg"); /* Reemplazaremos esto con tu imagen */
-      background-size: cover;
-      background-position: center;
-      height: 300px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #d4af37;
-      font-size: 2em;
-      font-weight: bold;
-      text-shadow: 1px 1px 5px #000;
+    header h1 {
+      margin-bottom: 10px;
     }
-
-    section {
-      padding: 2em;
-      max-width: 800px;
+    header p {
+      font-size: 1.1em;
+      color: #ddd;
+    }
+    .banner-img {
+      max-width: 250px;
+      margin-top: 20px;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
       margin: auto;
     }
-
+    .section h2 {
+      color: #0e1b2e;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: calc(33.33% - 10px);
+      height: auto;
+      border-radius: 6px;
+    }
+    .testimonios, .logos, .contacto {
+      margin-top: 40px;
+    }
+    .logos img {
+      width: 80px;
+      margin: 10px;
+      vertical-align: middle;
+    }
+    .whatsapp {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #25d366;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
     footer {
-      background-color: #0a0a0a;
-      color: #888;
-      padding: 1em;
+      text-align: center;
+      padding: 20px;
       font-size: 0.9em;
+      background-color: #0e1b2e;
+      color: #aaa;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-
   <header>
-    Servicio Técnico en Zona Oeste y Gran Buenos Aires
-  </header>
+    <h1>Service Castelar</h1>
+    <p>Instalación y reparación de aires acondicionados · Heladeras familiares y comerciales · Lavarropas automáticos</p>
+    <img src="aire-banner.jpg" alt="Aire acondicionado" class="banner-img" />
+    <br />
+    <a href="https://wa.me/541169598282" class="whatsapp">Contactar por WhatsApp</a>
+  </header>  <section class="section">
+    <h2>Trabajos realizados</h2>
+    <div class="gallery">
+      <img src="2-aires.jpg" alt="Trabajo 1" />
+      <img src="aire-ventana-cerrada.jpg" alt="Trabajo 2" />
+      <img src="aire-luz.jpg" alt="Trabajo 3" />
+      <img src="aire-ventana.jpg" alt="Trabajo 4" />
+      <img src="aire-ventana-abierta.jpg" alt="Trabajo 5" />
+      <img src="aire-ventana-pequeña.jpg" alt="Trabajo 6" />
+      <img src="aire-verde.jpg" alt="Trabajo 7" />
+      <img src="casa.jpg" alt="Trabajo 8" />
+      <img src="escalera.jpg" alt="Trabajo 9" />
+      <img src="persa.jpg" alt="Trabajo 10" />
+      <img src="rejas.jpg" alt="Trabajo 11" />
+    </div><div class="testimonios">
+  <h2>Lo que opinan nuestros clientes</h2>
+  <p>“Excelente servicio. Rápido, prolijo y muy amable. ¡Gracias!” – Marta, Ituzaingó</p>
+  <p>“Recomiendo totalmente. Me dejaron el aire funcionando perfecto.” – Pablo, Castelar</p>
+  <p>“Confiables y puntuales. Ya los llamé tres veces para distintos equipos.” – Graciela, Haedo</p>
+</div>
 
-  <section>
-    <h1>Más de 25 años de experiencia</h1>
-    <p>Instalación, reparación y mantenimiento de aire acondicionado.</p>
-    <p>Atención personalizada y garantía de calidad.</p>
-  </section>
+<div class="logos">
+  <h2>Trabajamos con todas las marcas</h2>
+  <img src="logo-samsung.png" alt="Samsung" />
+  <img src="logo-lg.png" alt="LG" />
+  <img src="logo-philco.png" alt="Philco" />
+  <img src="logo-bgh.png" alt="BGH" />
+  <img src="logo-electrolux.png" alt="Electrolux" />
+</div>
 
-  <footer>
-    &copy; 2025 Servicio Técnico Castelar - Todos los derechos reservados
+<div class="contacto">
+  <h2>Contacto</h2>
+  <p><strong>Teléfono / WhatsApp:</strong> <a href="https://wa.me/541169598282">1169598282</a></p>
+  <p><strong>Email:</strong> acostacarlosandres919@gmail.com</p>
+  <p><strong>Zona de trabajo:</strong> Gran Buenos Aires</p>
+  <p><strong>Horario:</strong> Lunes a Sábado de 08:00 a 18:00 hs</p>
+</div>
+
+  </section>  <footer>
+    © 2025 Service Castelar
   </footer>
-
 </body>
 </html>
