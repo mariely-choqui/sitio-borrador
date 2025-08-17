@@ -225,9 +225,19 @@
   <p><strong>Horario:</strong> Lunes a Sábado de 08:00 a 18:00 hs</p>
 </div>
 
-  </section>  <footer>
-    © 2025 Service Castelar
-  </footer>
+ </section>  
+<footer>
+  © 2025 Service Castelar
+</footer>
+
+<style>
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #1d3557;
+  color: white;
+}
+
 .highlight-box {
   background-color: #f2f2f2;
   border-left: 4px solid #2b7a78;
@@ -239,30 +249,29 @@
   font-family: Arial, sans-serif;
   color: #333;
 }
-  
 
-  .menu {
-    display: none;
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 10px;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-  }
-  .menu a {
-    display: block;
-    color: #1d3557;
-    text-decoration: none;
-    margin-bottom: 8px;
-    font-weight: 500;
-  }
+.menu {
+  display: none;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.menu a {
+  display: block;
+  color: #1d3557;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.menu a:hover {
+  text-decoration: underline;
+}
 
-  .menu a:hover {
-    text-decoration: underline;
-  }
-  .header-content {
+.header-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -278,7 +287,8 @@
     menu.style.display = (menu.style.display === "block") ? "none" : "block";
   }
 </script>
-   <script>
+
+<script>
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -290,5 +300,6 @@
   const fadeElements = document.querySelectorAll('.fade-in');
   fadeElements.forEach(el => observer.observe(el));
 </script>   
+
 </body>
 </html>
