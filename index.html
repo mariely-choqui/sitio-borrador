@@ -125,5 +125,63 @@
   </section>  <footer>
     © 2025 Service Castelar
   </footer>
+  <!-- MENÚ DESPLEGABLE -->
+<div class="menu-container">
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <div class="menu" id="menu">
+    <a href="#quienes-somos">Quiénes somos</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#trabajos-realizados">Trabajos realizados</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+</div>
+
+<style>
+  .menu-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+  }
+
+  .hamburger {
+    font-size: 28px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #1d3557;
+    padding: 4px 10px;
+    border-radius: 4px;
+  }
+
+  .menu {
+    display: none;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+
+  .menu a {
+    display: block;
+    color: #1d3557;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+
+  .menu a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+  }
+</script>
 </body>
 </html>
