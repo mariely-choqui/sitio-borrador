@@ -8,11 +8,41 @@
   <style>
     
     body {
-      margin: 0;
+   margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background-color: #f5f5f5;
       color: #333;
     }
+    .navbar {
+  background-color: #0d1b2a;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  gap: 15px;
+}
+
+.menu-icon {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header-content h1 {
+  color: #f8c332;
+  margin: 0;
+}
+
+.header-content p {
+  margin: 0;
+  color: white;
+}
     .fade-in {
   opacity: 0;
   transform: scale(0.95);
@@ -104,13 +134,18 @@
   </style>
 </head>
 <body>
-  <header>
+ <header class="navbar">
+  <div class="menu-icon">
+    &#9776;
+  </div>
+  <div class="header-content">
     <h1>Service Castelar</h1>
     <p>Instalación y reparación de aires acondicionados · Heladeras familiares y comerciales · Lavarropas automáticos</p>
-   <img src="banner-aire.jpg" alt="Aire acondicionado" class="banner-img" />
-    <br />
+    <img src="banner-aire.jpg" alt="Aire acondicionado" class="banner-img" />
+    <br>
     <a href="https://wa.me/541169598282" class="whatsapp">Contactar por WhatsApp</a>
-  </header>  <section class="section">
+  </div>
+</header> 
     <section id="quienes-somos" class="section">
  <section id="quienes-somos" class="section">
   <h2>Quiénes somos</h2>
