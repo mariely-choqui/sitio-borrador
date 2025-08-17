@@ -248,5 +248,17 @@
     menu.style.display = (menu.style.display === "block") ? "none" : "block";
   }
 </script>
+   <script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  });
+
+  const fadeElements = document.querySelectorAll('.fade-in');
+  fadeElements.forEach(el => observer.observe(el));
+</script>   
 </body>
 </html>
